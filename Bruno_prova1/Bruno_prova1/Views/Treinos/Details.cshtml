@@ -1,0 +1,50 @@
+﻿@model Bruno_prova1.Models.Treino
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Treino</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercicio.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Exercicio.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroVezesTreino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroVezesTreino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempoMaximo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempoMaximo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TreinoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
